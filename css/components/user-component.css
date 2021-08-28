@@ -3,6 +3,15 @@
   display: flex;
   align-items: center;
 }
+.user-component__column ~ .user-component__column:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 45px;
+  position: relative;
+  top: 5px;
+}
 .user-component {
   justify-content: space-between;
 }
@@ -24,6 +33,7 @@
 }
 .user-component__name {
   font-size: 22px;
+  padding: 5px 0px;
 }
 .user-component__name--xl {
   font-weight: 600;
@@ -35,4 +45,12 @@
 }
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
+}
+.user-component__time {
+  color: rgba(0, 0, 0, 0.4);
+}
+.user-component__column i {
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
 }
